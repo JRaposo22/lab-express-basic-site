@@ -22,6 +22,10 @@ app.get('/works', (request, response) => {
     response.sendFile(__dirname + '/views/works.html')
 })
 
+app.get('/gallery', (request, response) => {
+    response.sendFile(__dirname + '/views/gallery.html')
+})
+
 
 //listen do servidor
 app.listen(3000, () => console.log('Server running on port 3000'))
